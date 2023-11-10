@@ -1,0 +1,183 @@
+.hidden{
+    display: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color:slategray;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color:blueviolet;
+    padding: 10px 0;
+    
+}
+
+
+#main-logo{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 6px 6px 10px black;
+}
+
+#character_nav{
+    background-color:darkgrey;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+}
+
+.characters{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.characters li{
+    height: 400px;
+    margin: 10px 8px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 295px 0 purple inset;
+    transition: box-shadow .3s ease;
+}
+
+.characters li a{
+    text-decoration: none;
+}
+
+.characters li:hover{
+    box-shadow: 0 350px 0 purple inset;
+
+}
+
+.characters li h5{
+    color: white;
+    padding: 12px 8px;
+}
+
+article, #instruction{
+    padding: 30px;
+}
+
+article h3, #instruction h3{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+article p, #instruction p{
+    font-size: 20px;
+    text-align: center;
+    color: yellow;
+}
+
+.sprite{
+    width: 147px;
+    height: 290px;
+    background-image: url('../images/任务陈列总资源.jpg');
+}
+
+
+/* #hawkeye{background-position: -294px 0;}
+#hulk{background-position: -441px 0;}
+#ironman{background-position: -588px 0;}
+#captain{background-position: -735px 0;}
+#thor{background-position: -882px 0;}
+#blackwidow{background-position: -1029px 0;} mistake number*/
+
+/*The numbers i originally calculated were regular, but maybe there were some display problems because the pictures I made were of different sizes, so I made some adjustments to the numbers. */
+#hawkeye{background-position: -140px 0;}
+#hulk{background-position: -265px 0;}
+#ironman{background-position: -425px 0;}
+#captain{background-position: -588px 0;}
+#thor{background-position: -735px 0;}
+#blackwidow{background-position: -882px 0;}
+
+#nickfury:hover, #hawkeye:hover, #hulk:hover, #ironman:hover, #captain:hover, #thor:hover, #blackwidow:hover{
+    background-position-y: -290px;
+}
+
+footer{
+    text-align: center;
+    padding: 25px;
+}
+
+.sticky_footer{
+    height: 70px;
+    background-color: blueviolet;
+    position: sticky;
+    top: 100%;
+}
+
+.lightbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url('../images/NickFury_Bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 30px bottom;
+    display: none;
+    
+}
+
+#lightbox2{
+    background-image: url('../images/Hawkeys_Bg.jpg');
+    background-color: blueviolet;
+    
+}
+
+.lightbox_close{
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: all .5s ease-in-out;
+}
+
+.lightbox_close:hover{
+    opacity: 0.5;
+    color: rgb(248, 248, 12);
+}
+
+.lightbox article{
+    width: 60%;
+    margin-left: 35%;
+    margin-top: 2.5%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading{
+    text-align: left;
+}
+
+#lightbox2 .lb_heading{
+    color: black;
+}
+
+.lb_text{
+    line-height: 30px;
+}
+
+.lightbox:target{
+    display: block;
+}
